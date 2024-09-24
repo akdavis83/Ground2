@@ -1,0 +1,187 @@
+* {
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, .world {
+  transform-style: preserve-3d;
+}
+
+body {
+  background: #000;
+  display: grid;
+  place-items: center;
+  font: 40px/1.5 sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  perspective: 800px;
+}
+
+.world {
+  animation: camera 60s linear infinite;
+  position: absolute;
+  transform: translateZ(18.9em) translateY(0.5em) rotateX(0deg) rotateY(0deg);
+}
+
+.sky-segment, .ground {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.sky-segment {
+  background-image: linear-gradient(0deg, #9e8b6f, rgba(158, 139, 111, 0) 0.25em), url("https://assets.codepen.io/416221/sky.jpg");
+  background-size: 41.882478em 33.33%;
+  
+  width: 3.926875em;
+  height: 62.83em;
+}
+.sky-segment:nth-child(1) {
+  background-position: 0em 100%;
+  transform: translate(-50%, -99.9%) rotateY(0deg) translateZ(calc(-20em + 0.2em));
+}
+.sky-segment:nth-child(2) {
+  background-position: -3.926875em 100%;
+  transform: translate(-50%, -99.9%) rotateY(-11.25deg) translateZ(calc(-20em + 0.2em));
+}
+.sky-segment:nth-child(3) {
+  background-position: -7.85375em 100%;
+  transform: translate(-50%, -99.9%) rotateY(-22.5deg) translateZ(calc(-20em + 0.2em));
+}
+.sky-segment:nth-child(4) {
+  background-position: -11.780625em 100%;
+  transform: translate(-50%, -99.9%) rotateY(-33.75deg) translateZ(calc(-20em + 0.2em));
+}
+.sky-segment:nth-child(5) {
+  background-position: -15.7075em 100%;
+  transform: translate(-50%, -99.9%) rotateY(-45deg) translateZ(calc(-20em + 0.2em));
+}
+.sky-segment:nth-child(6) {
+  background-position: -19.634375em 100%;
+  transform: translate(-50%, -99.9%) rotateY(-56.25deg) translateZ(calc(-20em + 0.2em));
+}
+.sky-segment:nth-child(7) {
+  background-position: -23.56125em 100%;
+  transform: translate(-50%, -99.9%) rotateY(-67.5deg) translateZ(calc(-20em + 0.2em));
+}
+.sky-segment:nth-child(8) {
+  background-position: -27.488125em 100%;
+  transform: translate(-50%, -99.9%) rotateY(-78.75deg) translateZ(calc(-20em + 0.2em));
+}
+.sky-segment:nth-child(9) {
+  background-position: -31.415em 100%;
+  transform: translate(-50%, -99.9%) rotateY(-90deg) translateZ(calc(-20em + 0.2em));
+}
+.sky-segment:nth-child(10) {
+  background-position: -35.341875em 100%;
+  transform: translate(-50%, -99.9%) rotateY(-101.25deg) translateZ(calc(-20em + 0.2em));
+}
+.sky-segment:nth-child(11) {
+  background-position: -39.26875em 100%;
+  transform: translate(-50%, -99.9%) rotateY(-112.5deg) translateZ(calc(-20em + 0.2em));
+}
+.sky-segment:nth-child(12) {
+  background-position: -43.195625em 100%;
+  transform: translate(-50%, -99.9%) rotateY(-123.75deg) translateZ(calc(-20em + 0.2em));
+}
+.sky-segment:nth-child(13) {
+  background-position: -47.1225em 100%;
+  transform: translate(-50%, -99.9%) rotateY(-135deg) translateZ(calc(-20em + 0.2em));
+}
+.sky-segment:nth-child(14) {
+  background-position: -51.049375em 100%;
+  transform: translate(-50%, -99.9%) rotateY(-146.25deg) translateZ(calc(-20em + 0.2em));
+}
+.sky-segment:nth-child(15) {
+  background-position: -54.97625em 100%;
+  transform: translate(-50%, -99.9%) rotateY(-157.5deg) translateZ(calc(-20em + 0.2em));
+}
+.sky-segment:nth-child(16) {
+  background-position: -58.903125em 100%;
+  transform: translate(-50%, -99.9%) rotateY(-168.75deg) translateZ(calc(-20em + 0.2em));
+}
+.sky-segment:nth-child(17) {
+  background-position: -62.83em 100%;
+  transform: translate(-50%, -99.9%) rotateY(-180deg) translateZ(calc(-20em + 0.2em));
+}
+.sky-segment:nth-child(18) {
+  background-position: -66.756875em 100%;
+  transform: translate(-50%, -99.9%) rotateY(-191.25deg) translateZ(calc(-20em + 0.2em));
+}
+.sky-segment:nth-child(19) {
+  background-position: -70.68375em 100%;
+  transform: translate(-50%, -99.9%) rotateY(-202.5deg) translateZ(calc(-20em + 0.2em));
+}
+.sky-segment:nth-child(20) {
+  background-position: -74.610625em 100%;
+  transform: translate(-50%, -99.9%) rotateY(-213.75deg) translateZ(calc(-20em + 0.2em));
+}
+.sky-segment:nth-child(21) {
+  background-position: -78.5375em 100%;
+  transform: translate(-50%, -99.9%) rotateY(-225deg) translateZ(calc(-20em + 0.2em));
+}
+.sky-segment:nth-child(22) {
+  background-position: -82.464375em 100%;
+  transform: translate(-50%, -99.9%) rotateY(-236.25deg) translateZ(calc(-20em + 0.2em));
+}
+.sky-segment:nth-child(23) {
+  background-position: -86.39125em 100%;
+  transform: translate(-50%, -99.9%) rotateY(-247.5deg) translateZ(calc(-20em + 0.2em));
+}
+.sky-segment:nth-child(24) {
+  background-position: -90.318125em 100%;
+  transform: translate(-50%, -99.9%) rotateY(-258.75deg) translateZ(calc(-20em + 0.2em));
+}
+.sky-segment:nth-child(25) {
+  background-position: -94.245em 100%;
+  transform: translate(-50%, -99.9%) rotateY(-270deg) translateZ(calc(-20em + 0.2em));
+}
+.sky-segment:nth-child(26) {
+  background-position: -98.171875em 100%;
+  transform: translate(-50%, -99.9%) rotateY(-281.25deg) translateZ(calc(-20em + 0.2em));
+}
+.sky-segment:nth-child(27) {
+  background-position: -102.09875em 100%;
+  transform: translate(-50%, -99.9%) rotateY(-292.5deg) translateZ(calc(-20em + 0.2em));
+}
+.sky-segment:nth-child(28) {
+  background-position: -106.025625em 100%;
+  transform: translate(-50%, -99.9%) rotateY(-303.75deg) translateZ(calc(-20em + 0.2em));
+}
+.sky-segment:nth-child(29) {
+  background-position: -109.9525em 100%;
+  transform: translate(-50%, -99.9%) rotateY(-315deg) translateZ(calc(-20em + 0.2em));
+}
+.sky-segment:nth-child(30) {
+  background-position: -113.879375em 100%;
+  transform: translate(-50%, -99.9%) rotateY(-326.25deg) translateZ(calc(-20em + 0.2em));
+}
+.sky-segment:nth-child(31) {
+  background-position: -117.80625em 100%;
+  transform: translate(-50%, -99.9%) rotateY(-337.5deg) translateZ(calc(-20em + 0.2em));
+}
+.sky-segment:nth-child(32) {
+  background-position: -121.733125em 100%;
+  transform: translate(-50%, -99.9%) rotateY(-348.75deg) translateZ(calc(-20em + 0.2em));
+}
+
+.ground {
+  background-color: #222;
+  background-image: url("https://assets.codepen.io/416221/barren_wasteland.jpg");
+  background-size: 25% 25%;
+  border-radius: 50%;
+  width: 40em;
+  height: 40em;
+  transform: translate(-50%, -50%) rotateX(90deg);
+}
+
+@keyframes camera {
+  from {
+    transform: translateZ(18.9em) translateY(0.5em) rotateX(0deg) rotateY(0);
+  }
+  to {
+    transform: translateZ(18.9em) translateY(0.5em) rotateX(0deg) rotateY(1turn);
+  }
+}
